@@ -1,0 +1,25 @@
+/* App.css */
+
+/* User Icon */
+.navbar .nav-link .fa-user-circle {
+  font-size: 35px; /* Increase size */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-link .fa-user-circle:hover {
+  transform: scale(1.2); /* Slight zoom effect */
+  color: #fff; /* Change color on hover */
+}
+
+/* Search Button */
+.navbar .btn-outline {
+  /* transition: background-color 0.3s ease, transform 0.3s ease; */
+  border-color: #ff6600;
+  color: #fff;
+}
+
+.navbar .btn-outline:hover .fa-search:hover{
+  background-color: #ff6600; /* Orange background on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  border-color: #ff6600;
+}
