@@ -1,0 +1,89 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Foodi Express",
+      "image":"foodi-express",
+      "menu": [1, 2, 3, 4]
+    },
+    {
+      "id": 2,
+      "name": "Spice Town",
+      "image":"spice-town",
+      "menu": [5, 6, 7]
+    },
+    {
+      "id": 3,
+      "name": "Healthy Bites",
+      "image":"healthy-bite",
+      "menu": [8, 9]
+    },
+    {
+      "id": 4,
+      "name": "Pizza Hut",
+      "image":"pizza-hut",
+      "menu": [10, 11,12]
+    }
+  ],
+  "categories": [
+    { "id": 1, "name": "Pizza","image":"pizza" },
+    { "id": 2, "name": "Burgers","image":"burgers" },
+    { "id": 3, "name": "Drinks","image":"drinks" },
+    { "id": 4, "name": "Desserts","image":"desserts" },
+    { "id": 5, "name": "Indian" ,"image":"indian"},
+    { "id": 6, "name": "Salads","image":"salads" }
+  ],
+  "menu": [
+    { "id": 1, "title": "Margherita Pizza", "image":"margherita-pizza", "price": 10, "categoryId": 1, "restaurantId": 1 ,"quantity":12},
+    { "id": 2, "title": "Cheeseburger","image":"Cheeseburger", "price": 8, "categoryId": 2, "restaurantId": 1,"quantity":10 },
+    { "id": 3, "title": "Coca-Cola","image":"cococola", "price": 2, "categoryId": 3, "restaurantId": 1,"quantity":20},
+    { "id": 4, "title": "Chocolate Cake","image":"chocolate-cake", "price": 5, "categoryId": 4, "restaurantId": 1,"quantity":5 },
+    { "id": 5, "title": "Butter Chicken","image":"butter-chicken", "price": 12, "categoryId": 5, "restaurantId": 2,"quantity":12 },
+    { "id": 6, "title": "Paneer Tikka","image":"paneer-tikka", "price": 10, "categoryId": 5, "restaurantId": 2 ,"quantity":50},
+    { "id": 7, "title": "Masala Chai","image":"masala-chai", "price": 3, "categoryId": 3, "restaurantId": 2,"quantity":11 },
+    { "id": 8, "title": "Greek Salad","image":"greek-salad", "price": 7, "categoryId": 6, "restaurantId": 3 ,"quantity":4},
+    { "id": 9, "title": "Avocado Toast","image":"avocado-toast", "price": 6, "categoryId": 6, "restaurantId": 3,"quantity":10 },
+    { "id": 10, "title": "Pepperoni Pizza","image":"pepperoni-piza", "price": 6, "categoryId": 1, "restaurantId": 4 ,"quantity":4},
+    { "id": 11, "title": "Margherita Pizza Special", "image":"margherita-pizza", "price": 10, "categoryId": 1, "restaurantId": 4,"quantity":1 },
+    { "id": 12, "title": "Veggie Pizza", "image":"veggie-pizza", "price": 10, "categoryId": 1, "restaurantId": 4 ,"quantity":12}
+  ],
+   "orders": [
+    {
+      "id": 1,
+      "customerName": "John Doe",
+      "email": "john@example.com",
+      "items": [
+        { "menuId": 1, "quantity": 2 },
+        { "menuId": 3, "quantity": 3 }
+      ],
+      "total": 26,
+      "status": "Pending",
+      "date": "2025-09-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "customerName": "Jane Smith",
+      "email": "jane@example.com",
+      "items": [
+        { "menuId": 5, "quantity": 1 },
+        { "menuId": 6, "quantity": 2 }
+      ],
+      "total": 32,
+      "status": "Completed",
+      "date": "2025-09-02T12:30:00Z"
+    },
+    {
+      "id": 3,
+      "customerName": "Bob Johnson",
+      "email": "bob@example.com",
+      "items": [
+        { "menuId": 10, "quantity": 1 },
+        { "menuId": 11, "quantity": 1 }
+      ],
+      "total": 16,
+      "status": "Pending",
+      "date": "2025-09-03T15:45:00Z"
+    }
+  ]
+}
+
